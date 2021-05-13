@@ -1,0 +1,22 @@
+setList = ['STX',
+            'KHM',
+            'ZNR',
+            'M21',
+            'IKO',
+            'THB',
+            'ELD',
+            'M20',
+            'WAR',
+            'RNA',
+            'GRN',
+            'M19',
+            'DOM',
+            'RIX',
+            'XLN',
+            'AKR',
+            'HA1',
+            'HA2',
+            'HA3',
+            'HA4']
+
+mysticalArchives = 'STA'
