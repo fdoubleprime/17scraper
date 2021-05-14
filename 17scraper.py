@@ -1,16 +1,15 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import userSettings
-import mtgSettings
+import utilities
+import selenium.webdriver.support.select as select
 
+driver = utilities.startBrowser()
+driver = utilities.login(driver)
 
-driver=webdriver.Chrome('./chromedriver')
+expansionSelectorName = 'expansion'
 
-driver.get('https:\\www.17lands.com\login')
+driver.get('https://www.17lands.com/collection')
 
-usernameSelector = 'email'
-passwordSelector = 'password'
+expansionSelector = select.Select(driver.find_element_by_name(expansionSelectorName))
 
-currentSelector = driver.find_element_by_name(usernameSelector)
-currentSelector.clear()
-currentSelector.send_keys(userSettings.username17)
+expansionSelector.select_by_value('KHM')
+
+driver.find_element_by_css_selector('#collection_app > div > div:nth-child(4) > table')
