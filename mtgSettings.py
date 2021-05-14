@@ -19,4 +19,4 @@ setList = ['STX',
             'HA3',
             'HA4']
 
-mysticalArchives = 'STA'
+specialSets = [{'setAbbreviation':'STA','listedWith':'STX'}]
